@@ -1,0 +1,345 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tổng quan */
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    line-height: 1.6;
+    color: #b3c41f;
+    background-color: #f8f8f8;
+    animation: flyInFromBottom 1.5s ease-out;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+header {
+    background-color: #99dd6c;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+header {
+    text-align: center; /* Căn giữa nội dung */
+    background-color: #f8f9fa; /* Tùy chỉnh màu nền nếu muốn */
+    padding: 20px 0; /* Thêm khoảng cách trên dưới */
+}
+
+.site-title {
+    font-family: 'Arial', sans-serif; /* Tùy chọn phông chữ */
+    font-size: 36px; /* Tùy chỉnh kích thước chữ */
+    color: #333; /* Màu chữ */
+    margin: 0; /* Xóa khoảng cách mặc định */
+}
+.site-title {
+    font-family: 'Georgia', serif;
+    font-size: 40px;
+    color: #4CAF50; /* Màu xanh lá nhạt */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Hiệu ứng bóng chữ */
+    letter-spacing: 2px; /* Tăng khoảng cách giữa các chữ */
+    transition: transform 0.3s ease-in-out;
+}
+
+.site-title:hover {
+    transform: scale(1.1); /* Phóng to nhẹ khi hover */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #c06c84;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to bottom, #e8c5b4, #f4e3d3);
+    text-align: center;
+    padding: 100px 20px;
+    color: #333;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #c06c84;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #aa4d6a;
+}
+
+/* Services Section */
+#services {
+    padding: 60px 20px;
+    background: #fff;
+}
+
+#services h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: #c06c84;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.service {
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service img {
+    max-width: 100%;
+    border-bottom: 2px solid #c06c84;
+}
+
+.service h3 {
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.service p {
+    padding: 0 15px 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 20px;
+    background: #f4e3d3;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #c06c84;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#contact-form input, 
+#contact-form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    display: inline-block;
+    background: #c06c84;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#contact-form button:hover {
+    background: #aa4d6a;
+}
+
+/* Footer */
+footer {
+    background-color: #004d99; /* Màu nền footer */
+    color: #ffffff; /* Màu chữ */
+    padding: 20px;
+    text-align: center;
+}
+
+footer .contact-info {
+    margin-bottom: 10px;
+}
+
+footer .contact-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #66ccff;
+}
+
+footer .contact-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+footer .contact-info p a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    #contact-form {
+        padding: 15px;
+    }
+}
+@keyframes flyInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(50px); /* Bắt đầu từ dưới */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Về vị trí ban đầu */
+    }
+}
+.contact-button {
+    text-align: center; /* Canh giữa nút */
+    margin: 20px 0;
+}
+
+.contact-button button {
+    background-color: #4267B2; /* Màu xanh Facebook */
+    color: #ffffff; /* Màu chữ */
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.contact-button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contact-button a {
+    text-decoration: none;
+    color: #4267B2; /* Màu xanh Facebook */
+    transition: color 0.3s ease;
+}
+.contact-icons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contact-icons .icon {
+    margin: 0 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-icons .icon i {
+    color: #555; /* Màu mặc định */
+}
+
+.contact-icons img {
+    margin: 0 10px;
+    border-radius: 50%; /* Tạo hiệu ứng tròn */
+    transition: transform 0.3s ease;
+}
+
+.contact-icons img:hover {
+    transform: scale(1.2); /* Phóng to nhẹ khi hover */
+}
+
+
+.contact-icons .icon:hover i {
+    transform: scale(1.2); /* Phóng to khi hover */
+}
+
+
+.contact-button a:hover {
+    color: #365899; /* Màu đậm hơn khi hover */
+}
+
+.contact-button button:hover {
+    background-color: #365899; /* Màu đậm hơn khi hover */
+}
